@@ -1,66 +1,68 @@
-# EEG Seizure Detection using Machine Learning
+# 🧠 EEG Seizure Detection using Machine Learning
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-Random%20Forest%20%7C%20XGBoost-green)
+![Dataset](https://img.shields.io/badge/Dataset-CHB--MIT-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+---
 
 ## 📌 Project Description
 
-This project focuses on detecting epileptic seizures from EEG signals using machine learning techniques. The approach involves signal segmentation, feature extraction from EEG data, and classification using traditional ML models.
+This project focuses on detecting epileptic seizures from EEG signals using machine learning techniques. The pipeline includes signal segmentation, feature extraction, and classification using traditional ML models.
 
-A baseline model using Random Forest is implemented, followed by an improved model using XGBoost with enhanced feature engineering. The goal is to improve seizure detection performance, particularly sensitivity, which is critical in clinical applications.
+A baseline **Random Forest** model is implemented, followed by an improved **XGBoost** model with enhanced feature engineering to improve detection performance, especially sensitivity.
+
+---
+
+## 🧾 Workflow Overview
+
+```id="flow1"
+EEG Data → Segmentation → Feature Extraction → ML Model → Evaluation
+```
 
 ---
 
 ## 📊 Dataset
 
-* Dataset used: **CHB-MIT Scalp EEG Dataset**
+* **CHB-MIT Scalp EEG Dataset**
 * Source: PhysioNet
-* Contains EEG recordings from pediatric patients with annotated seizure events
+* Pediatric EEG recordings with seizure annotations
 
-⚠️ Note:
-The dataset is not included in this repository due to size.
-Download it from: https://physionet.org/content/chbmit/1.0.0/
+⚠️ Dataset not included due to size
+👉 https://physionet.org/content/chbmit/1.0.0/
 
 ---
 
 ## ⚙️ Methodology
 
-1. **EEG Signal Loading**
+### 🔹 1. Signal Processing
 
-   * EEG data is loaded from `.edf` files using the MNE library
+* EEG loaded using MNE
+* Segmented into 5-second windows
 
-2. **Segmentation**
+### 🔹 2. Feature Extraction
 
-   * Signals are divided into fixed-length windows (5 seconds)
+* Time-domain: mean, standard deviation
+* Frequency-domain: delta, theta, alpha, beta band power
+* Entropy-based features
 
-3. **Feature Extraction**
+### 🔹 3. Models
 
-   * Time-domain features: mean, standard deviation
-   * Frequency-domain features: delta, theta, alpha, beta band power
-   * Entropy-based features for improved representation
+* 🌲 Random Forest (Baseline)
+* ⚡ XGBoost (Improved Model)
 
-4. **Model Training**
+### 🔹 4. Evaluation Metrics
 
-   * Baseline model: Random Forest
-   * Improved model: XGBoost
-
-5. **Evaluation**
-
-   * Accuracy
-   * Sensitivity (Recall)
+* Accuracy
+* Sensitivity (Recall)
 
 ---
 
 ## ▶️ How to Run
 
-1. Install dependencies:
-
-```
+```id="run1"
 pip install -r requirements.txt
-```
-
-2. Place EEG `.edf` files in the project directory
-
-3. Run the main script:
-
-```
 python main.py
 ```
 
@@ -68,23 +70,32 @@ python main.py
 
 ## 📈 Results
 
-| Model         | Description                                 |
-| ------------- | ------------------------------------------- |
-| Random Forest | Baseline ML model                           |
-| XGBoost       | Improved model with better feature handling |
-
-The improved model demonstrates better performance compared to the baseline, especially in terms of sensitivity.
+| Model         | Performance          |
+| ------------- | -------------------- |
+| Random Forest | Baseline             |
+| XGBoost       | Improved performance |
 
 ---
 
-## 🎯 Conclusion
+## 🎯 Key Contribution
 
-This project demonstrates that incorporating better feature engineering and advanced ML models can significantly improve EEG-based seizure detection. Future work can explore hybrid ML-DL approaches for further enhancement.
+* Improved seizure detection using **feature engineering + XGBoost**
+* Focus on **clinically relevant metric (sensitivity)**
+* Clean ML pipeline for EEG analysis
+
+---
+
+## 🚀 Future Work
+
+* Hybrid ML + Deep Learning model
+* Real-time seizure detection
+* Multi-channel spatial analysis
 
 ---
 
 ## 👩‍💻 Author
 
-Tanishka Bajpai
+**Tanishka Bajpai**
 
 ---
+
