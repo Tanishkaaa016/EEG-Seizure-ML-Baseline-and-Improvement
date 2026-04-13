@@ -85,6 +85,6 @@ This project demonstrates that incorporating better feature engineering and adva
 
 ## 👩‍💻 Author
 
-* Your Name
+Tanishka Bajpai
 
 ---
