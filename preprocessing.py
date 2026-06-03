@@ -1,3 +1,18 @@
+"""
+preprocessing.py
+
+EEG preprocessing pipeline for CHB-MIT seizure detection.
+
+Functions:
+- EEG loading
+- Resampling
+- Bandpass filtering
+- Z-score normalization
+- Window generation
+- Seizure label generation
+
+Author: Tanishka Bajpai
+"""
 import wfdb
 import numpy as np
 from scipy.signal import resample, butter, filtfilt
