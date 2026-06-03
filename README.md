@@ -121,6 +121,8 @@ The Random Forest classifier was used to identify the most informative EEG featu
 
 ![Feature Importance](results/feature_importance.png)
 
+The Random Forest model identified several highly discriminative EEG features for seizure detection. The most important features were associated with temporal dynamics, spectral characteristics, and nonlinear EEG complexity measures, highlighting the value of combining conventional EEG features with Sample Entropy.
+
 ## Experimental Results
 
 ### Average Performance Across Recordings
