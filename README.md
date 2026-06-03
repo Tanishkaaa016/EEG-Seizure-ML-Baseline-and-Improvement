@@ -62,11 +62,11 @@ The objective of this work is to improve seizure detection performance by addres
 
 ### Average Performance Across Recordings
 
-| Metric      | Baseline RF | Proposed RF |
-| ----------- | ----------: | ----------: |
-| Accuracy    |      99.63% |  **99.77%** |
-| Sensitivity |       68.3% |   **80.8%** |
-| F1 Score    |       0.785 |   **0.866** |
+| Metric      | Baseline Random Forest | Proposed Method |
+| ----------- | ---------------------: | --------------: |
+| Accuracy    |                 99.63% |      **99.77%** |
+| Sensitivity |                  68.3% |       **80.8%** |
+| F1 Score    |                  0.785 |       **0.866** |
 
 ### Recording-wise Performance
 
@@ -76,12 +76,12 @@ The objective of this work is to improve seizure detection performance by addres
 | CHB01_04  |   99.86% |       80.0% |    0.889 |
 | CHB01_15  |   99.58% |       62.5% |    0.769 |
 
-## Key Findings
+### Key Findings
 
 * Improved average sensitivity by 12.5%
 * Improved average F1 score by 10.3%
 * Maintained classification accuracy above 99%
-* Demonstrated the usefulness of entropy-based EEG complexity features
+* Demonstrated the effectiveness of entropy-based EEG complexity measures for seizure detection
 
 ## Technologies Used
 
