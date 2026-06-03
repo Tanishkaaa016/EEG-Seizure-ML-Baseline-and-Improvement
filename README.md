@@ -115,6 +115,12 @@ Seizure Detection
 * SMOTE Oversampling
 * Threshold Optimization
 
+## Feature Importance Analysis
+
+The Random Forest classifier was used to identify the most informative EEG features for seizure detection.
+
+![Feature Importance](results/feature_importance.png)
+
 ## Experimental Results
 
 ### Average Performance Across Recordings
