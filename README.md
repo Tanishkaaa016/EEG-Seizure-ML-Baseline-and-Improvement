@@ -49,7 +49,7 @@ CHB-MIT EEG Signals
 
 ↓
 
-Bandpass Filtering (0.5–40 Hz)
+Bandpass Filtering (0.5–30 Hz)
 
 ↓
 
