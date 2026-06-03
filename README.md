@@ -1,4 +1,4 @@
-# EEG Seizure Detection using Machine Learning
+# EEG-Based Epileptic Seizure Detection Using Sample Entropy and Random Forest
 
 ## Overview
 
